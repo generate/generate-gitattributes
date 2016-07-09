@@ -1,4 +1,4 @@
-# generate-gitattributes [![NPM version](https://img.shields.io/npm/v/generate-gitattributes.svg?style=flat)](https://www.npmjs.com/package/generate-gitattributes) [![NPM downloads](https://img.shields.io/npm/dm/generate-gitattributes.svg?style=flat)](https://npmjs.org/package/generate-gitattributes) [![Build Status](https://img.shields.io/travis/jonschlinkert/generate-gitattributes.svg?style=flat)](https://travis-ci.org/jonschlinkert/generate-gitattributes)
+# generate-gitattributes [![NPM version](https://img.shields.io/npm/v/generate-gitattributes.svg?style=flat)](https://www.npmjs.com/package/generate-gitattributes) [![NPM downloads](https://img.shields.io/npm/dm/generate-gitattributes.svg?style=flat)](https://npmjs.org/package/generate-gitattributes) [![Build Status](https://img.shields.io/travis/generate/generate-gitattributes.svg?style=flat)](https://travis-ci.org/generate/generate-gitattributes)
 
 Generate a .gitattributes file from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator.
 
@@ -16,7 +16,7 @@ For more information about Generate:
 
 Templates are [customizable](#customization) and can be overridden.
 
-![generate-gitattributes demo](https://raw.githubusercontent.com/jonschlinkert/generate-gitattributes/master/docs/demo.gif)
+![generate-gitattributes demo](https://raw.githubusercontent.com/generate/generate-gitattributes/master/docs/demo.gif)
 
 <br>
 <br>
@@ -98,7 +98,7 @@ Run [generate-dest](https://github.com/generate/generate-dest) **before** this g
 
 **Example**
 
-![generate-gitattributes generate-dest example](https://raw.githubusercontent.com/jonschlinkert/generate-gitattributes/master/docs/demo-dest.gif)
+![generate-gitattributes generate-dest example](https://raw.githubusercontent.com/generate/generate-gitattributes/master/docs/demo-dest.gif)
 
 ## API usage
 
@@ -262,7 +262,7 @@ $ npm install -d && npm test
 ## License
 
 Copyright © 2016, [Jon Schlinkert](https://github.com/jonschlinkert).
-Released under the [MIT license](https://github.com/jonschlinkert/generate-gitattributes/blob/master/LICENSE).
+Released under the [MIT license](https://github.com/generate/generate-gitattributes/blob/master/LICENSE).
 
 ***
 

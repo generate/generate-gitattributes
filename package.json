@@ -2,11 +2,11 @@
   "name": "generate-gitattributes",
   "description": "Generate a .gitattributes file from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator.",
   "version": "0.1.0",
-  "homepage": "https://github.com/jonschlinkert/generate-gitattributes",
+  "homepage": "https://github.com/generate/generate-gitattributes",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
-  "repository": "jonschlinkert/generate-gitattributes",
+  "repository": "generate/generate-gitattributes",
   "bugs": {
-    "url": "https://github.com/jonschlinkert/generate-gitattributes/issues"
+    "url": "https://github.com/generate/generate-gitattributes/issues"
   },
   "license": "MIT",
   "files": [
