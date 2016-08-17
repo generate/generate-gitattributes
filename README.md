@@ -1,16 +1,17 @@
-# generate-gitattributes [![NPM version](https://img.shields.io/npm/v/generate-gitattributes.svg?style=flat)](https://www.npmjs.com/package/generate-gitattributes) [![NPM downloads](https://img.shields.io/npm/dm/generate-gitattributes.svg?style=flat)](https://npmjs.org/package/generate-gitattributes) [![Build Status](https://img.shields.io/travis/generate/generate-gitattributes.svg?style=flat)](https://travis-ci.org/generate/generate-gitattributes)
+<p align="center">
 
-Generate a .gitattributes file from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator.
+<a href="https://github.com/generate/generate">
+<img height="150" width="150" src="https://raw.githubusercontent.com/generate/generate/master/docs/logo.png">
+</a>
+</p>
 
-## What is generate?
+Generate a .gitattributes file from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator to make it a continuous part of the build workflow when scaffolding out a new project.
 
-Generate is a command line tool and developer framework for scaffolding out new GitHub projects using [generators](https://github.com/generate/generate/blob/master/docs/generators.md) and [tasks](https://github.com/generate/generate/blob/master/docs/tasks.md). Answers to prompts and the user's environment can be used to determine the templates, directories, files and contents to build. Support for [gulp](http://gulpjs.com), [base](https://github.com/node-base/base) and [assemble](https://github.com/assemble/assemble) plugins, and much more.
+# generate-gitattributes
 
-For more information about Generate:
+[![NPM version](https://img.shields.io/npm/v/generate-gitattributes.svg?style=flat)](https://www.npmjs.com/package/generate-gitattributes) [![NPM downloads](https://img.shields.io/npm/dm/generate-gitattributes.svg?style=flat)](https://npmjs.org/package/generate-gitattributes) [![Build Status](https://img.shields.io/travis/generate/generate-gitattributes.svg?style=flat)](https://travis-ci.org/generate/generate-gitattributes)
 
-* Visit the [generate project](https://github.com/generate/generate)
-* Visit the [generate documentation](https://github.com/generate/generate/blob/master/docs/)
-* Find [generators on npm](https://www.npmjs.com/browse/keyword/generate-generator) (help us [author generators](https://github.com/generate/generate/blob/master/docs/micro-generators.md))
+![generate-gitattributes demo](https://raw.githubusercontent.com/generate/generate-gitattributes/master/docs/demo.gif)
 
 **Example**
 
@@ -23,11 +24,13 @@ Templates are [customizable](#customization) and can be overridden.
 
 ## What is "Generate"?
 
-Generate is a command line tool and developer framework for scaffolding out new GitHub projects using [generators](https://github.com/generate/generate/blob/master/docs/generators.md) and [tasks](https://github.com/generate/generate/blob/master/docs/tasks.md). Answers to prompts and the user's environment can be used to determine the templates, directories, files and contents to build. Support for [gulp](http://gulpjs.com), [base](https://github.com/node-base/base) and [assemble](https://github.com/assemble/assemble) plugins, and much more.
+Generate is a command line tool and developer framework for scaffolding out new GitHub projects using [generators](https://github.com/generate/generate/blob/master/docs/generators.md) and [tasks](https://github.com/generate/generate/blob/master/docs/tasks.md).
 
-For more information about Generate:
+Answers to prompts and the user's environment can be used to determine the templates, directories, files and contents to build. Support for [gulp](http://gulpjs.com), [base](https://github.com/node-base/base) and [assemble](https://github.com/assemble/assemble) plugins, and much more.
 
-* Visit the [generate project](https://github.com/generate/generate)
+**For more information**:
+
+* Visit the [generate project](https://github.com/generate/generate/)
 * Visit the [generate documentation](https://github.com/generate/generate/blob/master/docs/)
 * Find [generators on npm](https://www.npmjs.com/browse/keyword/generate-generator) (help us [author generators](https://github.com/generate/generate/blob/master/docs/micro-generators.md))
 
@@ -40,7 +43,7 @@ For more information about Generate:
 
 **Installing the CLI**
 
-To run the `gitattributes` generator from the command line, you'll need to install [generate](https://github.com/generate/generate) globally first. You can do that now with the following command:
+To run the `gitattributes` generator from the command line, you'll need to install [Generate](https://github.com/generate/generate) globally first. You can do that now with the following command:
 
 ```sh
 $ npm install --global generate
@@ -50,7 +53,7 @@ This adds the `gen` command to your system path, allowing it to be run from any 
 
 **Install generate-gitattributes**
 
-You may now install this module with the following command:
+Install this module with the following command:
 
 ```sh
 $ npm install --global generate-gitattributes
@@ -161,23 +164,49 @@ $ gen dest gitattributes
 
 You can override a template by adding a template of the same name to the `templates` directory in user home. For example, to override the `.gitattributes` template, add a template at the following path `~/generate/generate-gitattributes/templates/.gitattributes`, where `~/` is the user-home directory that `os.homedir()` resolves to on your system.
 
-## CLI
+## What is "Generate"?
 
-**Help**
+Generate is a command line tool and developer framework for scaffolding out new GitHub projects using [generators](https://github.com/generate/generate/blob/master/docs/generators.md) and [tasks](https://github.com/generate/generate/blob/master/docs/tasks.md).
 
-Get general help and a menu of available commands:
+Answers to prompts and the user's environment can be used to determine the templates, directories, files and contents to build. Support for [gulp](http://gulpjs.com), [base](https://github.com/node-base/base) and [assemble](https://github.com/assemble/assemble) plugins, and much more.
+
+**For more information**:
+
+* Visit the [generate project](https://github.com/generate/generate/)
+* Visit the [generate documentation](https://github.com/generate/generate/blob/master/docs/)
+* Find [generators on npm](https://www.npmjs.com/browse/keyword/generate-generator) (help us [author generators](https://github.com/generate/generate/blob/master/docs/micro-generators.md))
+
+## Getting started
+
+### Install
+
+**Installing the CLI**
+
+To run the `gitattributes` generator from the command line, you'll need to install [Generate](https://github.com/generate/generate) globally first. You can do that now with the following command:
 
 ```sh
-$ gen help
+$ npm install --global generate
 ```
 
-**Running the `gitattributes` generator**
+This adds the `gen` command to your system path, allowing it to be run from any directory.
 
-Once both [generate](https://github.com/generate/generate) and `generate-gitattributes` are installed globally, you can run the generator with the following command:
+**Install generate-gitattributes**
+
+Install this module with the following command:
+
+```sh
+$ npm install --global generate-gitattributes
+```
+
+### Usage
+
+Run this generator's `default` [task](https://github.com/generate/generate/blob/master/docs/tasks.md#default) with the following command:
 
 ```sh
 $ gen gitattributes
 ```
+
+**What you should see in the terminal**
 
 If completed successfully, you should see both `starting` and `finished` events in the terminal, like the following:
 
@@ -189,62 +218,49 @@ If completed successfully, you should see both `starting` and `finished` events 
 
 If you do not see one or both of those events, please [let us know about it](../../issues).
 
-## API
+### Help
 
-### Install locally
-
-If you want to use `generate-gitattributes` as a plugin or sub-generator to extend the features and settings in your own generator, you must first install it locally:
-
-Install with [npm](https://www.npmjs.com/):
+To see a general help menu and available commands for Generate's CLI, run:
 
 ```sh
-$ npm install --save generate-gitattributes
+$ gen help
 ```
 
-### Use as a plugin
+## Tasks
 
-Use as a [plugin](https://github.com/generate/generate/blob/master/docs/plugins.md) if you want to extend your own generator with the features, settings and tasks of `generate-gitattributes`, as if they were created on your generator:
+All available tasks.
 
-```js
-module.exports = function(app) {
-  app.use(require('generate-gitattributes'));
-};
+### [gitattributes](generator.js#L20)
+
+Generates a `.gitattributes` file to the current working directory. The built-in template can be [overridden](#customization).
+
+**Example**
+
+```sh
+$ gen gitattributes
 ```
 
-Visit Generate's [plugin docs](https://github.com/generate/generate/blob/master/docs/plugins.md) to learn more about plugins.
+Visit Generate's [documentation for tasks](https://github.com/generate/generate/blob/master/docs/tasks.md).
 
-### Use as a sub-generator
+## About
 
-Use as a [sub-generator](https://github.com/generate/generate/blob/master/docs/generators.md) if you want to add `generate-gitattributes` to a  _namespace_ in your generator:
+### Community
 
-```js
-module.exports = function(app) {
-  // register the generate-gitattributes with whatever name you want
-  app.register('foo', require('generate-gitattributes'));
-};
-```
+Are you using [Generate](https://github.com/generate/generate) in your project? Have you published a [generator](https://github.com/generate/generate/blob/master/docs/generators.md) and want to share your project with the world?
 
-Visit Generate's [sub-generator docs](https://github.com/generate/generate/blob/master/docs/sub-generators.md) to learn more about sub-generators.
+Here are some suggestions!
 
-## Contributing
+* If you get like Generate and want to tweet about it, please feel free to mention `@generatejs` or use the `#generatejs` hashtag
+* Show your love by starring [Generate](https://github.com/generate/generate) and `generate-gitattributes`
+* Get implementation help on [StackOverflow](http://stackoverflow.com/questions/tagged/generate) (please use the `generatejs` tag in questions)
+* **Gitter** Discuss Generate with us on [Gitter](https://gitter.im/generate/generate)
+* If you publish an generator, thank you! To make your project as discoverable as possible, please add the keyword `generategenerator` to package.json.
 
-This document was generated by [verb-readme-generator](https://github.com/verbose/verb-readme-generator) (a [verb](https://github.com/verbose/verb) generator), please don't edit directly. Any changes to the readme must be made in [.verb.md](.verb.md). See [Building Docs](#building-docs).
+### Contributing
 
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](../../issues/new).
 
-Or visit the [verb-readme-generator](https://github.com/verbose/verb-readme-generator) project to submit bug reports or pull requests for the readme layout template.
-
-## Building docs
-
-_(This document was generated by [verb-readme-generator](https://github.com/verbose/verb-readme-generator) (a [verb](https://github.com/verbose/verb) generator), please don't edit the readme directly. Any changes to the readme must be made in [.verb.md](.verb.md).)_
-
-Generate readme and API documentation with [verb](https://github.com/verbose/verb):
-
-```sh
-$ npm install -g verb verb-readme-generator && verb
-```
-
-## Running tests
+### Running tests
 
 Install dev dependencies:
 
@@ -252,18 +268,18 @@ Install dev dependencies:
 $ npm install -d && npm test
 ```
 
-## Author
+### Author
 
 **Jon Schlinkert**
 
 * [github/jonschlinkert](https://github.com/jonschlinkert)
 * [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
 
-## License
+### License
 
 Copyright © 2016, [Jon Schlinkert](https://github.com/jonschlinkert).
 Released under the [MIT license](https://github.com/generate/generate-gitattributes/blob/master/LICENSE).
 
 ***
 
-_This file was generated by [verb](https://github.com/verbose/verb), v0.9.0, on July 09, 2016._
+_This file was generated by [verb-generate-readme](https://github.com/verbose/verb-generate-readme), v0.1.30, on August 17, 2016._
